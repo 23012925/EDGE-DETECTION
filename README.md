@@ -46,9 +46,9 @@ plt.title('Original Image')
 plt.axis('off')
 ```
 <img width="358" height="573" alt="image" src="https://github.com/user-attachments/assets/8d6c50fa-60b5-43d1-bbfe-de1b97dac143" />
-
-### SOBEL EDGE DETECTOR
 ```
+### SOBEL EDGE DETECTOR
+
 sobel_x = cv2.Sobel(gray_image, cv2.CV_64F, 1, 0, ksize=5)  # Sobel in x direction
 sobel_y = cv2.Sobel(gray_image, cv2.CV_64F, 0, 1, ksize=5)  # Sobel in y direction
 sobel_combined = cv2.magnitude(sobel_x, sobel_y)  # Combine both directions
@@ -56,17 +56,22 @@ plt.imshow(sobel_combined, cmap='gray')
 plt.title('Sobel Edge Detection')
 plt.axis('off')
 ```
+
 <img width="406" height="569" alt="image" src="https://github.com/user-attachments/assets/abf3ee91-5778-4d8b-b169-d86b18f0ff4d" />
-### LAPLACIAN EDGE DETECTOR
+
 ```
+### LAPLACIAN EDGE DETECTOR
+
 laplacian = cv2.Laplacian(gray_image, cv2.CV_64F)
 plt.imshow(laplacian, cmap='gray')
 plt.title('Laplacian Edge Detection')
 plt.axis('off')
 ```
+
 <img width="608" height="823" alt="image" src="https://github.com/user-attachments/assets/2374e918-2842-410e-9f98-c0af6313f97a" />
-### CANNY EDGE DETECTOR
 ```
+### CANNY EDGE DETECTOR
+
 canny_edges = cv2.Canny(gray_image, 50, 150)
 plt.imshow(canny_edges, cmap='gray')
 plt.title('Canny Edge Detection')
