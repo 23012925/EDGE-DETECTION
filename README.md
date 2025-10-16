@@ -59,6 +59,7 @@ plt.axis('off')
 ```
 <img width="406" height="569" alt="image" src="https://github.com/user-attachments/assets/abf3ee91-5778-4d8b-b169-d86b18f0ff4d" />
 </br>
+
 ### LAPLACIAN EDGE DETECTOR
 ```
 laplacian = cv2.Laplacian(gray_image, cv2.CV_64F)
@@ -66,9 +67,9 @@ plt.imshow(laplacian, cmap='gray')
 plt.title('Laplacian Edge Detection')
 plt.axis('off')
 ```
-
 <img width="608" height="823" alt="image" src="https://github.com/user-attachments/assets/2374e918-2842-410e-9f98-c0af6313f97a" />
 </br>
+
 
 ### CANNY EDGE DETECTOR
 ```
